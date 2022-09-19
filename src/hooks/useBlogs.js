@@ -8,10 +8,9 @@ export default function useBlogs() {
       const resp = await getBlogs();
       setBlogs(resp);
     };
-        
+    
     getAllBlogs();
   }, []);
-  console.log('🚀 ~ file: useBlogs.js ~ line 17 ~ useBlogs ~ blogs', blogs);
     
   return blogs;
 }
