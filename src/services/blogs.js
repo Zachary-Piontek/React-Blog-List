@@ -1,10 +1,9 @@
-import { client, checkError } from './client.js';
+import { client, checkError } from './client';
 
 export async function getBlogs() {
   const resp = await client
     .from('blogs')
-    .select(`*, authors(*)`)
-    .order('title');
+    .select(`*, authors(*)`);
 
   return checkError(resp);
   

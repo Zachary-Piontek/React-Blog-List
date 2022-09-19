@@ -2,6 +2,7 @@ import React from 'react';
 import './BlogCard.css';
 
 export default function BlogCard({ title, subtitle, text, image, authors: { name }, created_at }) {
+
   return (
     <div className="blog-card">
       <div className="details">
